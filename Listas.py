@@ -11,6 +11,8 @@ miLista.extend(["Mayra", "Pamela", "Fany"])
 #Para acceder a un indice en especifico ponemos el numero entre corchetes
 #para comprobar si un elemento se encuentra
 #print("Pepe" in miLista)
+#Eliminacion de elementos
+#miLista.remove("Anna")
 
 print(miLista.index("Andrea mamita"))
 

@@ -7,8 +7,11 @@ edad_usuario=int(input("Introduce la edad por favor: "))
 
 if edad_usuario<18:
     print("No puedes pasar")
-
+elif edad_usuario>100:
+    print("Edad fuera de rango")
 else:
     print("Tienes acceso")
 
 print("El programa ha finalizado")
+
+#Pendiente min 10

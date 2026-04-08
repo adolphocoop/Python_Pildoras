@@ -6,8 +6,13 @@ def resta(num1, num2):
 
 def multiplica(num1, num2):
     return num1*num2
+
 def divide(num1, num2):
-    return num1 / num2
+    try:
+        return num1 / num2
+    except ZeroDivisionError:
+        print("No se puede dividir entre cero")
+        return "Operacion erronea"
 
 op1=(int(input("introduce el primer numero: ")))
 op2=(int(input("introduce el segundo numero: ")))

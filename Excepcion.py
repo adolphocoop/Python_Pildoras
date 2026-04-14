@@ -13,11 +13,20 @@ def divide(num1, num2):
     except ZeroDivisionError:
         print("No se puede dividir entre cero")
         return "Operacion erronea"
+    
+    #Toma nota de que es un bucle infinito
+    #Al no ser correctos los valores saltara al except y volvera a pedir los valores numericos
 
-op1=(int(input("introduce el primer numero: ")))
-op2=(int(input("introduce el segundo numero: ")))
 
+while True:
+    try:
+        op1=(int(input("introduce el primer numero: ")))
+        op2=(int(input("introduce el segundo numero: ")))
+        break
+    except ValueError:
+     print("los valores introducidos no son los correctos. Intentalo de nuevo")
 operacion=input("Introduce la operacion a realizar (suma, resta, multiplica, divide)")
+
 
 if operacion=="suma":
     print(suma(op1, op2))
